@@ -5658,6 +5658,7 @@ export function unionWith<T>(pred: (a: T, b: T) => boolean): _.F.Curry<(a: reado
  * ```
  */
 export function uniq<T>(list: readonly T[]): T[];
+export function uniq<T>(): (list: readonly T[]) => T[];
 
 /**
  * Returns a new list containing only one copy of each element in the original list,
